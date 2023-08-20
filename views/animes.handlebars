@@ -1,0 +1,15 @@
+{{#if animes}}
+<div class="container" id="lista-animes">
+    <div class="row" id="animes-div">
+        {{#each animes}}
+        <div class="col">
+            {{> card nombre=this.nombre genero=this.genero id=this.id autor=this.autor}}
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{else}}
+<div class="container" id="sin-lista-animes">
+    <h1 id="sin-animes">No se encuentran animes</h1>
+</div>
+{{/if}}

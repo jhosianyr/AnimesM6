@@ -1,0 +1,15 @@
+<div class="cardAnime">
+  <h5>{{nombre}}</h5>
+  <p>Género: {{genero}}</p>
+  <p>Id: {{id}}</p>
+  <p>Autor: {{autor}}</p>
+  <p>Año: {{anio}}</p>
+  <div>
+    <a href="/editar/{{id}}" class="card-link btn btn-success">Editar</a>
+    <button class="btn btn-danger eliminar-anime" data-id="{{id}}">Eliminar</button>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/swet/sweetalert2.all.min.js"></script>
+<script src="/script/card-export-hbs.js"></script>

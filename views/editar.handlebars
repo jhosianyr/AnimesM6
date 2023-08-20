@@ -1,0 +1,38 @@
+<div class="container" id="div-main-editar-anime">
+    <div class="card" id="card-editar-anime">
+        <div class="card-body container" id="card-body-editar-anime">
+            <form id="editar-anime-formulario">
+                <div class="mb-3" style="display: none;">
+                    <h3 id="id">{{anime.id}}</h3>
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre Anime</label>
+                    <textarea type="text" name="nombre" required="true" class="form-control textarea" id="nombre"
+                        aria-describedby="nombre">{{anime.nombre}}</textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="autor" class="form-label">Autor</label>
+                    <textarea type="text" name="autor" required="true" class="form-control textarea" id="autor"
+                        required="true" aria-describedby="autor">{{anime.autor}}</textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="anio" class="form-label">Año</label>
+                    <textarea type="text" name="anio" class="form-control textarea" id="anio" required="true"
+                        aria-describedby="anio">{{anime.anio}}</textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="genero" class="form-label">Genero</label>
+                    <textarea type="text" name="genero" class="form-control textarea" id="genero" required="true"
+                        aria-describedby="genero">{{anime.genero}}</textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-secondary">Editar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/swet/sweetalert2.all.min.js"></script>
+<script src="/script/editar-export-hbs.js"></script>
